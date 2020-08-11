@@ -39,7 +39,7 @@ class App extends Component {
   handlePredictClick = (event) => {
     const formData = this.state.formData;
     this.setState({ isLoading: true });
-    fetch('http://0.0.0.0:5000/prediction/', 
+    fetch('http://35.224.26.129:5000/prediction/', 
       {
         headers: {
           'Accept': 'application/json',
@@ -132,7 +132,7 @@ class App extends Component {
               </Form.Group>
             </Form.Row>
             <Row>
-              <Col>
+              <Col md= {{ span:4, offset: 4}}>
                 <Button
                   block
                   variant="success"
